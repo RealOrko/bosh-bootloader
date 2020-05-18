@@ -1,4 +1,16 @@
 # bosh-bootloader
+
+<div>
+    <a href="https://snapcraft.io/cf-bbl">
+        <img alt="Get it from the Snap Store" src="https://snapcraft.io/static/images/badges/en/snap-store-white.svg" />
+    </a>
+</div>
+<div>
+    <a href="https://snapcraft.io/cf-bbl">
+        <img alt="cf-bbl" src="https://snapcraft.io/cf-bbl/badge.svg" />
+    </a>
+</div>
+
 Also known as `bbl` *(pronounced: "bubble")*, bosh-bootloader is a command line utility for standing up BOSH
 on an IaaS. `bbl` currently supports AWS, GCP, Microsoft Azure, Openstack and vSphere.
 
@@ -30,6 +42,20 @@ The following should be installed on your local machine
 $ brew tap cloudfoundry/tap
 $ brew install bosh-cli
 $ brew install bbl
+```
+
+**Linux**
+
+You have to make sure you have [installed snapd](https://snapcraft.io/docs/installing-snapd) for your linux distro. 
+
+```sh
+snap install cf-bbl
+```
+
+You can also alias `cf-bbl` to `bbl` in your `.bashrc` file. 
+
+```sh
+echo "alias bbl='cf-bbl'" >> ~/.bashrc
 ```
 
 ## Usage
